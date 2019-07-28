@@ -6,6 +6,12 @@
   src: url("../media/oregon book.ttf");
 }
 
+@keyframes logoanimation {
+  0% {left: 0px; top: 0px;}
+  50% {left: 200px; top: 0px;}
+  100% {left: 0px; top: 0px;}
+}
+
 article {	
   padding: 10px;
 }
@@ -71,6 +77,17 @@ section {
   border-radius: 5px;
   text-decoration: none;
   box-shadow: 5px 5px 5px #888888;
+}
+
+#animation {
+  position: relative;
+  animation-name: logoanimation;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
 }
 
 #img-rotate {
