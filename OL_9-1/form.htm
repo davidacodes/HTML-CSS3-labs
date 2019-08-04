@@ -26,15 +26,36 @@
 
 <h1>Registration Form</h1>
 
-<form>
+<p>
+Habitat for Humanity needs volunteers. Do you want to help? Complete the registration form and join our worldwide fight against substandard housing.
+</p>
 
-<fieldset name="pattern_attribute">
-<legend>The Pattern Attribute</legend><br>
+<form autocomplete="on">
+<fieldset name="personal_info">
+<legend>Personal Information:</legend>
+Title: <input list="titles" name="title"><br>
+<datalist id="titles">
+<option value="Mr.">
+<option value="Mrs.">
+<option value="Ms.">
+</datalist>
+First Name: <input autofocus required type="text" name="firstname" maxlength="8"><br>
+Last Name: <input required type="text" name="lastname" maxlength="8"><br>
+Date of Birth: <input type="text" name="dob"><br>
 
-Date: <input type="text" name="date" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}"><br/>
-E-mail: <input type="email" name="email" placeholder="user@domain.com" pattern="^.+@.+$" required><br/>
+Best Home Building Skill:<br>
+<textarea name="bestskill" placeholder="Carpentry" maxlength="9">
+</textarea>
 
-<button type="submit" formaction="http://ss1.ciwcertified.com/cgi-bin/process.pl">Submit Form</button>
+</fieldset>
+<br>
+
+<fieldset name="user-experience">
+<legend>Experience:</legend>
+Years of Home Building Experience: 0 <input type="range" name="experience" min="0" max="10"> 10+ <p>
+Number of Habitat Homes Built: <input type="number" name="homesbuilt" min="0" max="5"></p>
+
+<button type="submit" formaction="http://ss1.ciwcertified.com/cgi-bin/process.pl" formtarget="_blank">Submit Form to a New Window</button>
 
 </fieldset>
 

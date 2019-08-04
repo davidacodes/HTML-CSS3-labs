@@ -27,12 +27,16 @@
 <h1>Registration Form</h1>
 
 <form>
-
 <fieldset name="pattern_attribute">
 <legend>The Pattern Attribute</legend><br>
 
-Date: <input type="text" name="date" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}"><br/>
-E-mail: <input type="email" name="email" placeholder="user@domain.com" pattern="^.+@.+$" required><br/>
+Date: <input type="text" name="date" placeholder="dd/mm/yyyy" pattern="\d{1,2}/\d{1,2}/\d{4}"><br><br>
+
+E-mail: <input type="email" placeholder="user@provider.com" name="email" pattern="^.+@.+$"><br/>
+
+URL: <input type="url" placeholder="http://www.ciwcertified.com" name="URL" pattern="https://.+"><br/>
+
+Price: $<input type="text" placeholder="0.00" name="price" pattern="\d+(\.\d{2})?"><br/>
 
 <button type="submit" formaction="http://ss1.ciwcertified.com/cgi-bin/process.pl">Submit Form</button>
 
