@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register With Us</title>
+</head>
+<body>
+    <form method="GET" action="https://request-inspector.glitch.me/">
+        <input type="text" name="username" placeholder="Enter your username"><br/>
+        <input type="password" name="password" placeholder="Password"><br/>
+        <textarea name="bio" placeholder="Please tell us about yourself."></textarea><br/>
+        How did you hear about us?<br/>
+        <input type="radio" name="hearUs" value="billboard">Billboard<br/>
+        <input type="radio" name="hearUS" value="radio advertisement">Radio Ad<br/>
+        <input type="radio" name="hearUS" value="internet advertisement">Internet Ad<br/>
+        <input type="radio" name="hearUS" value="other">Other<br/>
+        What kind of browser are you using?
+        <select name="browser">
+            <option value="firefox">FireFox</option>
+            <option value="chrome">Chrome</option>
+            <option value="other">Other</option>
+        </select>
+        <h2>What kind of phone do you own?</h2>
+        <label for="android">
+            Android<input id="android" type="checkbox" name="phones" value="andriod">
+        </label>
+        <label for="ios">
+            iOS <input id="ios" type="checkbox" name="phones" value="ios">
+        </label>
+        <label for="windows">
+            Windows <input id="windows" type="checkbox" name="phones" value="windows">
+        </label>
+        <button type="submit">Submit the form</button>
+
+    </form>
+
+</body>
+</html>
